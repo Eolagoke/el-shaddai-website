@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Training | El-Shaddai Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .tech-header { 
+            background-color: #000; 
+            background-image: radial-gradient(#111 1px, transparent 1px);
+            background-size: 20px 20px;
+            color: #00ff00; 
+            padding: 80px 0; 
+            font-family: 'Courier New', Courier, monospace; 
+        }
+        .skill-badge { background: #eef2ff; border-radius: 20px; padding: 5px 15px; margin: 5px 5px 0 0; display: inline-block; color: #4338ca; font-weight: bold; font-size: 0.8rem; }
+        .tech-card { transition: 0.3s; border-radius: 10px; overflow: hidden; }
+        .tech-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
+        .footer-link { color: #adb5bd; text-decoration: none; transition: 0.3s; }
+        .footer-link:hover { color: white; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">EL-SHADDAI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                <li class="nav-item"><a class="nav-link active" href="coding.html">Coding</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="tech-header text-center border-bottom border-success border-3">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-3">&lt;Coding Academy /&gt;</h1>
+        <p class="text-white lead">Empowering Young Minds with Visual Studio Code & Modern Frameworks</p>
+    </div>
+</header>
+
+<section class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">What We Teach</h2>
+        <p class="text-muted">Practical, hands-on training from a professional computer programmer.</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm tech-card">
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Web Dev">
+                <div class="card-body">
+                    <h5 class="fw-bold">Web Development</h5>
+                    <p class="small text-muted">Building responsive sites with HTML, CSS, and Bootstrap.</p>
+                    <span class="skill-badge">HTML5</span> <span class="skill-badge">CSS3</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm tech-card">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Mobile Apps">
+                <div class="card-body">
+                    <h5 class="fw-bold">App Development</h5>
+                    <p class="small text-muted">Cross-platform mobile apps using the Flutter framework.</p>
+                    <span class="skill-badge">Flutter</span> <span class="skill-badge">Dart</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm tech-card">
+                <img src="https://img.freepik.com/free-vector/user-interface-design-concept-with-device_23-2148498253.jpg" class="card-img-top" alt="UI UX">
+                <div class="card-body">
+                    <h5 class="fw-bold">UI/UX Design</h5>
+                    <p class="small text-muted">Designing beautiful user experiences and interfaces.</p>
+                    <span class="skill-badge">Figma</span> <span class="skill-badge">UI/UX</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm tech-card">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="AI">
+                <div class="card-body">
+                    <h5 class="fw-bold">AI Integration</h5>
+                    <p class="small text-muted">Learning how to use and build AI tools like chatbots.</p>
+                    <span class="skill-badge">AI Tools</span> <span class="skill-badge">Automation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 pt-5 align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-4 shadow-lg" alt="Programming Class">
+        </div>
+        <div class="col-md-6 px-md-4">
+            <h3 class="fw-bold mb-3">Hands-On Environment</h3>
+            <p class="text-muted">Our students don't just watch; they build. Using <strong class="text-dark">Visual Studio Code</strong>, children learn to create real-world projects like first-aid assistants and retail chatbots.</p>
+            <div class="bg-light p-4 rounded-3 border-start border-primary border-4 mt-4">
+                <p class="mb-0">Training is available for both <strong>Online</strong> and <strong>Onsite</strong> learners, ensuring flexibility for every family's schedule.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-5 mt-auto">
+    <div class="container text-center">
+        <h4 class="fw-bold mb-3">El-Shaddai Company</h4>
+        <p class="mb-1">Directed by: <strong>Emmanuel Olagoke</strong></p>
+        <div class="d-flex justify-content-center gap-3 my-3 flex-wrap">
+            <span><i class="bi bi-geo-alt-fill text-primary"></i> Online & Onsite</span>
+            <span><i class="bi bi-telephone-fill text-primary"></i> <a href="tel:+2349036036912" class="footer-link">+2349036036912</a></span>
+            <span><i class="bi bi-envelope-fill text-primary"></i> <a href="mailto:scofieldbauer4@gmail.com" class="footer-link">scofieldbauer4@gmail.com</a></span>
+        </div>
+        <hr class="bg-light w-25 mx-auto opacity-25">
+        <p class="small text-muted mb-0">&copy; 2026 El-Shaddai Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
