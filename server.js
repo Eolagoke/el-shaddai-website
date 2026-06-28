@@ -66,13 +66,23 @@ app.post('/submit-form', (req, res) => {
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.log("❌ Email Error:", error);
-        } else {
-            console.log("✅ Email successfully sent to your inbox!");
-        }
-        console.log("-------------------------------------");
-    });
+    if (error) {
+        console.log("❌ Email Error:", error);
+        // You can optionally add a res.send error message here later
+    } else {
+        console.log("✅ Email successfully sent to your inbox!");
+        
+        // 3. SEND SUCCESS PAGE BACK TO THE USER (Moved inside the else block!)
+        res.send(`
+            <div style="font-family: sans-serif; text-align: center; padding: 50px;">
+                <h1 style="color: #0d6efd;">Success!</h1>
+                <p>Thank you for registering with El-Shaddai Company.</p>
+                <a href="http://127.0.0.1:5500/register.html" style="color: #198754; text-decoration: none; font-weight: bold;">Return to website</a>
+            </div>
+        `);
+    }
+    console.log("-----------------------------------------");
+});
 
     // 3. SEND SUCCESS PAGE BACK TO THE USER
     res.send(`
