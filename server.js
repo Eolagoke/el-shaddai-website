@@ -64,7 +64,7 @@ app.post('/submit-form', (req, res) => {
             </div>
         `
     };
-
+    console.log("⏳ Handing email over to Google...");
     transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
         console.log("❌ Email Error:", error);
